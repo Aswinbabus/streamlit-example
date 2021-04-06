@@ -91,7 +91,6 @@ def prediction(Gender, Married, ApplicantIncome,CoApplicantIncome,LoanAmount,Loa
         else:
             newdict[i]=0
     newdf=pd.DataFrame(newdict)
-    st.write(newdf)
     y_pred=model.predict(newdf)
     prediction=(y_pred>0.58)
      
