@@ -11,6 +11,5 @@ bokeh
 pandas
 streamlit
 numpy
-pickle
 PIL
 sklearn
