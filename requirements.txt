@@ -3,6 +3,6 @@ pandas
 streamlit
 numpy
 pickle
-bokeh
+bokeh.models.widgets
 PIL
 sklearn
