@@ -15,12 +15,14 @@ st.sidebar.markdown("# Loan Prediction")
 st.sidebar.write("Click here to open Loan Prediction Application")
 image = Image.open('loan.jpg')
 st.image(image)
+url = 'https://loan-prediction-app-ai.herokuapp.com/'
 if st.sidebar.button('Predict Loan'):
-    js = "window.open('https://loan-prediction-app-ai.herokuapp.com/')"  
-    js = "window.location.href = 'https://loan-prediction-app-ai.herokuapp.com/'"  
-    html = '<img src onerror="{}">'.format(js)
-    div = Div(text=html)
-    st.bokeh_chart(div)
+    webbrowser.open_new_tab(url)
+    #js = "window.open('https://loan-prediction-app-ai.herokuapp.com/')"  
+    #js = "window.location.href = 'https://loan-prediction-app-ai.herokuapp.com/'"  
+    #html = '<img src onerror="{}">'.format(js)
+    #div = Div(text=html)
+    #st.bokeh_chart(div)
 st.markdown("<h1 style='text-align: center;'>Various Algorithms and Its Accuracy</h1>", unsafe_allow_html=True)
 df=pd.DataFrame({
     
