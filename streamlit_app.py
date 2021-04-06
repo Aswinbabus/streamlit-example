@@ -10,6 +10,7 @@ from PIL import Image
 import pandas as pd
 import numpy as np
 import pickle
+import webbrowser
 from bokeh.models.widgets import Div
 st.sidebar.markdown("# Loan Prediction")
 st.sidebar.write("Click here to open Loan Prediction Application")
