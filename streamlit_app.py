@@ -14,16 +14,16 @@ import webbrowser
 from bokeh.models.widgets import Div
 st.sidebar.markdown("# Loan Prediction")
 st.sidebar.write("Click here to open Loan Prediction Application")
+link = '[GitHub](http://github.com)'
+st.sidebar.markdown(link, unsafe_allow_html=True)
 image = Image.open('loan.jpg')
 st.image(image)
 url = 'https://loan-prediction-app-ai.herokuapp.com/'
 if st.sidebar.button('Predict Loan'):
-    webbrowser.open_new_tab(url)
-    #js = "window.open('https://loan-prediction-app-ai.herokuapp.com/')"  
-    #js = "window.location.href = 'https://loan-prediction-app-ai.herokuapp.com/'"  
-    #html = '<img src onerror="{}">'.format(js)
-    #div = Div(text=html)
-    #st.bokeh_chart(div)
+    js = "window.open('https://loan-prediction-app-ai.herokuapp.com/')"   
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)
 st.markdown("<h1 style='text-align: center;'>Various Algorithms and Its Accuracy</h1>", unsafe_allow_html=True)
 df=pd.DataFrame({
     
