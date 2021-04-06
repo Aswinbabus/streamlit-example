@@ -1,8 +1,8 @@
 altair
+bokeh
 pandas
 streamlit
 numpy
 pickle
-bokeh.models.widgets
 PIL
 sklearn
